@@ -1,0 +1,190 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f8f8f8; 
+    /* Note: This grayish background was chosen for simplicity */ 
+}
+
+/* Header and Navigation */
+header {
+    background-color: #4CAF50; /*Green color to fit with healthy food choices */ 
+    color: white; /* Used 'white' instead of #fff for variety */ 
+    padding: 1rem 0;
+    text-align: center; 
+    /* Text centered throughout for uniformity in user experience */ 
+}
+H2 {
+    color: #4CAF50;
+    text-align: center;
+    /* Header text is green for theme consistency */ 
+}
+p {
+    color: black; 
+    text-align: center; 
+}
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 10%;
+    padding-right: 10%; 
+}
+
+.nav-links {
+    list-style: none; /* Removed bullets for neatness */ 
+    display: flex;
+    gap: 1rem; /* Added space between links */ 
+    margin: 0;
+    padding: 0; 
+    /* Avoid unnecessary margins and padding */ 
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none; /* Makes links cleaner without underlines */ 
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    transition: background-color 0.3s; /* Added hover transition */ 
+}
+
+.nav-links a:hover {
+    background-color: #3e8e41; /* Green shade darkens when hovering */ 
+}
+
+/* Hero Section */
+.hero {
+    text-align: center;
+    color: white;
+    padding: 4rem 2rem; 
+}
+
+.hero h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem; 
+}
+
+.search-form {
+    margin-top: 1.5rem;
+    /* Spacing from the hero text */ 
+}
+
+.search-form input {
+    padding: 0.5rem; /* Padding for comfortable typing */ 
+    width: 60%; /* Form adjusts to screen size */ 
+    max-width: 300px; /* Limit width for better responsiveness */ 
+    border: none;
+    border-radius: 5px; 
+}
+
+.search-form button {
+    padding: 0.5rem 1rem;
+    background-color: #4CAF50;
+    color: white; 
+    border: none;
+    border-radius: 5px;
+    cursor: pointer; /* Pointer shows clickable button */ 
+    transition: background-color 0.3s; 
+}
+
+.search-form button:hover {
+    background-color: #3e8e41; 
+}
+
+/* Recipes Section */
+.recipe-list {
+    padding: 2rem;
+    background-color: white; /* Separate recipe section visually */ 
+    text-align: center; 
+}
+
+.recipe-list h2 {
+    margin-bottom: 2rem; 
+}
+
+.recipe-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem; 
+    justify-content: center;
+}
+
+.recipe-card {
+    background-color: #f4f4f4; /* Light gray for a clean card look */ 
+    border: 1px solid #ddd; 
+    border-radius: 10px; 
+    overflow: hidden; /* Ensure no overflow issues */ 
+    width: 300px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); 
+    text-align: left; 
+}
+
+.recipe-card img {
+    width: 100%; /* Images cover entire card width */ 
+    height: 200px; 
+    object-fit: cover; 
+}
+
+.recipe-card h3 {
+    margin: 1rem; 
+}
+
+.recipe-card p {
+    margin: 0 1rem 1rem; 
+}
+
+/* About Section */
+.about {
+    padding: 2rem;
+    background-color: #f9f9f9; 
+    text-align: center; 
+    /* Center aligned text for simplicity */ 
+}
+
+.about h2 {
+    margin-bottom: 1rem;
+}
+
+.about p {
+    max-width: 600px;
+    margin: 0 auto; 
+    
+}
+
+/* Contact Section */
+#contact {
+    padding: 2rem; 
+    background-color: white;  
+    text-align: center; 
+}
+
+#contact h2 {
+    margin-bottom: 1rem; 
+}
+
+#contact p {
+    max-width: 600px;
+    margin: 0 auto; 
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column; 
+        gap: 1rem; /* Space between navbar items */ 
+    }
+
+    .search-form input {
+        width: 100%; 
+        /* Form adjusts to smaller screens */ 
+    }
+
+    .recipe-container {
+        flex-direction: column; 
+        align-items: center; 
+        /* Recipes stack vertically */ 
+    }
+}

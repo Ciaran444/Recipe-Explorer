@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- This enables the site to work on any device-->
+    <meta name="description" content="Explore recipes by cuisine, dietary restrictions, or ingredients. Find your next favorite meal!">
+    <meta name="keywords" content="recipes, cooking, food, meal planning"> <!--Helps with SEO-->
+    <title>Recipe Explorer</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <h1>Recipe Explorer</h1>
+            <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="top-recipes.html">Top Recipes</a></li>
+        <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Search/Hero section-->
+        <section id="home" class="hero">
+            <h2>Discover the Perfect Recipe for You</h2>
+            <p>Search for recipes by ingredients, cuisine, or dietary preferences.</p>
+            <form class="search-form"> <!--Form used to search API--> 
+                <input type="text" placeholder="Search recipes..." aria-label="Search recipes">
+                <button type="submit">Search</button>
+            </form>
+        </section>
+
+        <!-- Recipes Section -->
+               <section id="recipes" class="recipe-list">
+            <div class="recipe-container" id="recipe-container">
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="about">
+            <h2>About Us</h2>
+            <p>
+                Recipe Explorer is the perfect solution to all your cooking needs! Just search whaterver your in the mood for, dietary requirements or simply types of cuisine and Recipe Explorer gives you suggestions followed by a step by step recipe.<br>
+                You can also check out our <a href="top-recipes.html">Top Recipes of the Week</a> for more inspiration
+            </p>
+            </div>
+        </section>
+ </main>
+
+    <footer>
+        <p>&copy; 2024 Recipe Explorer. All rights reserved.</p>
+    </footer>
+</body>
+</html>
